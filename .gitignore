@@ -1,0 +1,16 @@
+.bundle
+db/*.sqlite3*
+log/*.log
+*.log
+tmp/**/*
+tmp/*
+doc/api
+config/deploy.rb
+config/deploy*.rb
+config/database.yml
+doc/app
+passenger@autoworker.com
+passenger@autoworker.com.pub
+*.swp
+*~
+.DS_Store

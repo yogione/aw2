@@ -1,0 +1,3 @@
+tinyMCE.init({
+force_p_newlines: false
+});

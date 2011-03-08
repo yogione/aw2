@@ -1,0 +1,23 @@
+<%= form_for @story, :html =>{ :multipart => true } do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+  <%= f.label :title %><br />
+  <%= f.text_field :title %>
+  </div>
+<div class="field">
+  <%= f.label :link %><br />
+  <%= f.text_field :url %>
+</div>
+  <div class="field">
+  <%= f.label :teaser %><br />
+  <%#= f.tinymce :teaser, :rows => "5", :cols =>"20" %>
+  <%= f.text_area :teaser, :rows => "5", :cols =>"20" %>
+</div>
+<div class="field">
+  <%= f.label :photo %><br />
+  <%= f.file_field :photo %>
+</div>
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>

@@ -1,0 +1,38 @@
+<header>
+<%#= link_to logo, root_path %>
+<%= image_tag("awlogo4.gif", :size=>"663x75") %>
+<!--<%= link_to image_tag("logo1.jpeg", :size=>"100x50"), root_path %> -->
+<head>
+<div class="round" style="margin-top:10px;background-color: #eeeeee;float:right;width:100%;height:20px;">
+<% if signed_in? %>
+  <span style="float:right;margin-right:10px;margin-top:40px;">
+    Welcome <%=current_user.email%>&nbsp;|&nbsp;<%= link_to "Sign out", signout_path %>
+  </span>
+  <% end %>
+</div>
+</head>
+<div class="clear">
+</div>
+ <!-- <nav class="round">
+    <ul>
+      <li><%= link_to "Top Stories", root_path %></li>
+      <% if signed_in? %>
+
+                      <% if false%>  
+                          <li> <%= link_to "Profile", current_user %> </li> 
+                          <li><%= link_to "Users", users_path %></li> 
+                      <% end %>
+
+        <li><%= link_to "Post Story", poststory_path %></li>
+        <li><%= link_to "Retiree", retiree_path %></li>
+        <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+      <% end %>
+       
+      <% if signed_in? %>
+        <li><%= link_to "Sign out", signout_path %></li>
+      <% else %>
+        <li><%= link_to "Sign in", signin_path %></li>
+      <% end %>
+    </ul>
+    </nav> -->
+</header>

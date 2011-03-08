@@ -1,0 +1,3 @@
+SEED_TABLES = [
+  "retirees"
+]

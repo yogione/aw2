@@ -1,0 +1,57 @@
+<div>  
+</div>
+<table> <tr><td> <% form_for :retiree, :url => find_retiree_retirees_path do |f| %>
+    <%= f.text_field :name %>
+    <%= f.submit "Search" %>
+  <% end %></td><td><%= link_to 'Add Retiree', new_retiree_path, :class =>"addretiree_button" %></td></tr>
+<tr><td><h4>Retired autoworkers with wisdom to share</h4></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="pretty-table">
+ <thead>
+    <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Years worked</th>
+            <th scope="col">Pet Story</th>
+            <th scope="col">What are U doing now</th>
+            <th scope="col">Message to Company</th>
+    </tr>
+</thead>
+<tbody>
+  <% @temp_retirees
+     if signed_in? then
+    @temp_retirees = @retirees
+       else
+   @temp_retirees =  @retirees_sample
+  end %>
+
+   <%  @temp_retirees.each do |retiree| %>
+
+<tr>
+   <% if retiree.photo.exists? then%>
+        <th scope="row"><%=image_tag retiree.photo.url(:thumb), :size=>"70x70" %> <%= retiree.first_name %> <%= retiree.last_name %></th>
+        <% else %>
+        <th scope="row"><%=image_tag("logo3.jpeg", :size=>"70x70") %></br><%= retiree.first_name %> <%= retiree.last_name %></th>
+        <% end %>
+
+  <!--    <th scope="row"><img alt="" src="http://www.musicrooms.net/thumbnail.php?file=artists/jermaine_jackson_226268685.jpg"><%= retiree.first_name %> <%= retiree.last_name %></th> -->
+      <td><%= retiree.years_worked %> years at <%= retiree.plant %></td>
+      <td><%= retiree.pet_story %> <a href="#">find out more</a></td>
+      <td><%= retiree.what_are_you_doing %></td>
+      <td><%= retiree.message_to_ceo %> <a href="#">find out more</a></td>
+</tr>
+</tbody>
+ <!--   <tr>
+              
+        <td><%= link_to 'Edit', edit_retiree_path(retiree) if current_user == retiree.user %></td>
+             <% if false %>
+            <td><%= link_to 'Show', retiree %></td>
+            <td><%= link_to 'Destroy', retiree, :confirm => 'Are you sure?', :method => :delete %></td>
+          <% end %>
+    </tr> -->
+  <% end %>
+ <% $end %>
+  <%= will_paginate @retirees %>
+</table>
+ <% if not signed_in? %>
+    <%=  link_to "sign in to view more retirees", signin_path, :class =>"addretiree_button2" %>
+ <% end %>

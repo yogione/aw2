@@ -1,0 +1,16 @@
+<% if signed_in? %>
+  <table class="front" summary="For signed-in users">
+    <tr>
+      <td class="main">
+        <h1 class="micropost">Post a Story</h1>
+        <%= render('shared/story_form') %>
+         </td>
+       </tr>
+  </table>
+<% else %>
+<h1>Autoworker Community</h1>
+<p>
+  This is the home page for the <a href="http://autoworker.com/">autoworker community</a> autoworker communitylication.
+</p>
+<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<% end %>

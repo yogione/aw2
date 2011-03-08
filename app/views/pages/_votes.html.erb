@@ -1,0 +1,3 @@
+<%= link_to (image_tag("thumbsup.png", :size=>"20x20")), upvote_story_path(story), :remote => true %> <br/>
+votes&nbsp;<%=story.votes%><br/>
+<%=link_to  (image_tag("thumbsdown.png", :size=>"20x20")), downvote_story_path(story), :remote => true %>

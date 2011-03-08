@@ -1,0 +1,59 @@
+<div class="round" style="background-color: lightgray;width:70%;padding:5%;">
+<%= form_for @retiree, :html => { :multipart => true } do |f| %>
+  <% if @retiree.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@retiree.errors.count, "error") %> prohibited this retiree from being saved:</h2>
+      <ul>
+      <% @retiree.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <table>
+    <tr>
+      <td> <%= f.label :user_id %></td>
+      <td><%= f.text_field :user_id %></td>
+    </tr>
+    <tr>
+      <td> <%= f.label :first_name %></td>
+      <td><%= f.text_field :first_name %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :last_name %></td>
+      <td><%= f.text_field :last_name %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :years_worked %></td>
+      <td><%= f.text_field :years_worked %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :plant %></td>
+      <td><%= f.text_field :plant %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :pet_story %></td>
+      <td><%= f.text_field :pet_story %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :what_are_you_doing %></td>
+      <td><%= f.text_field :what_are_you_doing %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :video_path1 %></td>
+      <td><%= f.text_field :video_path1 %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :message_to_company %></td>
+      <td><%= f.text_field :message_to_ceo %></td>
+    </tr>
+    <tr>
+      <td> <%= f.label :photo %></td>
+      <td><%= f.file_field :photo %></td>
+    </tr>
+  </table>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+  </div>

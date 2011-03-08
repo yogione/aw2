@@ -1,0 +1,14 @@
+<%= init_tinymce_hammer_if_required %>
+<%= form_for @comment,  :url => postcomment_path do |f|  %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%#= f.tinymce :comment_text %>
+     <%= f.text_area :comment_text, :size => "4x4" %>
+    <%= f.fields_for :story do |uf| %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Submit" %>
+    </div>
+  <% end %>
+<% end %>

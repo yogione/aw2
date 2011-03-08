@@ -1,0 +1,487 @@
+.container {
+  width: 75%;
+}
+
+/*override Blueprint css table settings  */
+table {margin-bottom:0;}
+th, td, caption {padding:0px 0px 0px 0px;}
+
+
+
+
+      .pretty-table
+      {
+        padding: 0;
+        margin: 0;
+        border-collapse: collapse;
+        font-size: 0.9em;
+
+      }
+
+
+.pretty-table th {border-bottom: 3px solid #ffdec9;
+    padding: 15px;
+    text-align: left; text-shadow: 1px 1px 1px #8E8E8E;}
+
+     .pretty-table td
+      {
+        border-bottom: 1px solid #ffdec9;
+        padding: 12px;
+        text-align: left;
+        color: #7B7B79;
+		vertical-align: top;
+		border-left: 1px solid #ffdec9;
+    border-right: 1px solid #ffdec9;
+      }
+
+      .pretty-table th[scope=col]
+      {
+        color: #000;
+        background: url("/images/fade-orange.jpg") repeat-y right;
+        text-transform: uppercase;
+        font-size: 1.5em;
+
+		border-bottom: 3px solid #ffdec9;
+    padding: 15px;
+      }
+
+      .pretty-table th+th[scope=col]
+      {
+        color: #4F4F4F;
+        background: #fff;
+        border-left: 1px solid #ffdec9;
+    border-right: 1px solid #ffdec9; font-size:0.9em
+      }
+
+
+
+      .pretty-table th[scope=row]
+      {
+        background: url("/images/fade-orange.jpg") repeat-y right;
+        border-bottom: 1px solid #ffdec9;
+    padding: 15px;
+    vertical-align: top;width: 12%;
+      }
+
+
+      .pretty-table tr:hover td, .pretty-table th[scope=row]:hover
+      {
+        background: #FFFAF7;
+
+      }
+
+ .pretty-table td + td + td + td,  .pretty-table th[scope=col] + th[scope=col] + th[scope=col] + th[scope=col] + th[scope=col] {border-right:0}
+
+.pretty-table td a:link {
+background: url("/images/arrow.png") no-repeat scroll 92px center transparent;
+    border: 1px solid #FFDEC9;
+    color: #FFBB8E;
+    font-weight: bold;
+    padding: 2px 15px 2px 5px;
+    text-decoration: none;
+    vertical-align: middle;  }
+
+body {
+  #background: #94bbff;
+   background: url(http://eeleillib.com/images/mainBg.png) #ebebeb 0px 0px repeat-x;
+
+}
+
+header {
+  padding-top: 40px;
+}
+
+header img {
+  padding: 1em;
+  background: #fff;
+}
+
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #fff;
+}
+td.votes_box {
+  width: 8%;
+  height: 5px;
+  padding: 5px;
+  vertical-align: middle;
+ /* background: #ffc; */
+  border: 1px solid white;
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+/* Links */
+
+a {
+  color: solid white; 
+  text-decoration: none;
+}
+
+a:hover {
+/*  color: #069; */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+/* Navigation */
+
+nav {
+  float: middle;
+/* <<<<<<< HEAD:public/stylesheets/custom.css */
+  width: 100%;
+  border-radius: 5px;
+  margin: 14px 0 0 0;
+  padding: 0 0.7em;
+  white-space: nowrap;
+  background: #009908 url(/images/aten_header-grad.jpg) bottom repeat-x;
+  padding: 0 0.7em;
+/*=======
+  background: #eeeeee;
+  padding: 0 0.3em;
+>>>>>>> raghu/master:public/stylesheets/custom.css */
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 9px;
+  font-weight: bold;
+  font-size: 150%;
+
+}
+
+#nav li.active a, #nav li.active a:hover {
+    background:  #FFFFFF;
+    color: #FFFFFF;
+
+}
+
+nav ul li a:visited {
+  color: #09c ;
+  }
+
+nav ul li a:hover {
+/*  text-decoration: underline;*/
+   background: url(/images/aten_header-grad-inv.jpg) top repeat-x;
+}
+
+/* Sign up button */
+
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #006400;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+}
+
+a.addretiree_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 150px;
+  color: #fff;
+  background: #C2A366;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 10px;
+   -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+a.addretiree_button2 {
+  margin-left: auto;
+  float: right;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 300px;
+  color: #fff;
+  background: #C2A366;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 5px;
+   -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+/*<<<<<<< HEAD:public/stylesheets/custom.css */
+a.story_url {
+
+    font-weight: bold;
+    font-size: 130%;
+
+}
+tr.story_tr {
+/*    background: #66FFFF;*/
+     border: 5px solid white;
+     padding: 5px;
+     height: 10px;
+
+/*======= */
+a.signin_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #ee6400;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+/*>>>>>>> raghu/master:public/stylesheets/custom.css */
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  font-size:10px;
+  font-weight:bold;
+  float: none;
+}
+
+/* User show page */
+
+table.profile {
+  width: 80%;
+  margin-bottom: 0;
+}
+
+td.main {
+<<<<<<< HEAD:public/stylesheets/custom.css
+  width: 100%;
+=======
+  width: 60%;
+>>>>>>> raghu/master:public/stylesheets/custom.css
+  padding: 1em;
+}
+
+td.front_message {
+    width: 100%;
+
+}
+
+td.civil_message {
+  width: 100%;
+  height: 10px;
+  padding: 15px;
+  vertical-align: top;
+  background: #00FF00;
+  border: 5px solid white;
+}
+
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+th.retiree_th {
+  height: 5px;
+  padding: 15px;
+  border: 10px white;
+  vertical-align: top;
+  background: #00FF00;
+  border: 3px solid white;
+}
+  
+td.retiree_experience {
+  width: 20%;
+  height: 20px;
+  padding: 15px;
+  border: 10px white;
+  vertical-align: top;
+  background: #ffc;
+  border: 5px solid white;
+}
+
+td.retiree_petstory {
+  width: 25%;
+  height: 20px;
+  padding: 15px;
+  border: 10px white;
+  vertical-align: top;
+  background: #CCFFCC;
+  border: 5px solid white;
+}
+
+td.retiree_status {
+  width: 30%;
+  height: 20px;
+  padding: 15px;
+  border: 10px white;
+  vertical-align: top;
+  background: #66FFFF;
+  border: 5px solid white;
+}
+
+td.retiree_ceomsg {
+  width: 30%;
+  height: 20px;
+  padding: 15px;
+  border: 5px solid white;
+  vertical-align: top;
+  background: #FFCCCC;
+  margin: 5px;
+}
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/*  Error messages */
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+ul.users {
+  margin-top: 1em;
+}
+
+ul.users li {
+  list-style: none;
+}
+
+/*  Micropost styling */
+
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 50px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}

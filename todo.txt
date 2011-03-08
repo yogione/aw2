@@ -1,0 +1,64 @@
+home page (top stories)
+=========================
+1. view top stories w/o signin - only signin to comment
+2. view sample retirees .. with out sign in ... 
+3. JQUERY - bring back to vote count without refresh
+4. Automatic moderation of comments if not offensive language
+5. on the post comment page - need to show story title, teaser 
+   and rest of the comments
+
+5. is there a forum software / plugin for retirees tab
+
+
+
+
+
+
+
+logo - with lots of people ... working
+layout - retiree page
+layout - top stories page
+postgres or mysql on slice
+put realistic seed data
+username in the comments page - hardcoded 101 now
+use JQUERY to upvote / downvote instead of refreshing page
+forum
+seeds.rb 
+remove bad language from comments / stories
+only few users post stories in the beginning.
+
+get some early users to test it.
+
+
+Retirees Page
+=============
+search
+layout
+embed video link to be played on the same page
+
+
+slice host
+==========
+jquery
+
+http://paulsturgess.co.uk/articles/show/64-allowing-users-to-post-youtube-videos-to-your-ruby-on-rails-web-app
+
+
+done
+==========
+TinyMCE_hammer plugin
+config - rvm, passenger
+cap depoly -- get it working
+will_paginate for the retiree page
+upload images and manage them - post stories
+Cleanup routes.rb file
+upvote / downvote comments
+add photo upload for post story form
+add votes column to comments table
+retiree model .. get all the fields
+retiree scaffold
+email to Raghu
+img tag for retiree
+img_tag - stories
+vote up  and vote down buttons - make them work
+upload images and manage them - retiree page

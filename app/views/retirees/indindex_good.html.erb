@@ -1,0 +1,51 @@
+<div>
+  <% form_for :retiree, :url => find_retiree_retirees_path do |f| %>
+    <%= f.text_field :name %>
+    <%= f.submit "Search" %>
+  <% end %>
+  <%= link_to 'Add Retiree', new_retiree_path %>
+</div>
+<h3>Retired Autoworkers with wisdom to share</h3>
+<table>
+  <tr>
+    <th class="retiree_th round"> &nbsp;</th>
+    <th class="retiree_th round"> Name</th>
+    <th class="retiree_th round">Years</th>
+    <th class="retiree_th round">Pet Story</th>
+    <th class="retiree_th round">Current Hobby</th>
+    <th class="retiree_th round">Ceo's Message</th>
+    <!--<th>Status</th>
+    <th>Message to CEO</th>
+    <th></th>
+    <th></th>
+    <th></th-->
+  </tr>
+
+  <% @retirees.each do |retiree| %>
+    <tr>
+      <% if retiree.photo.exists? then%>
+        <td><%=image_tag retiree.photo.url(:thumb) %> </td>
+        <% else %>
+        <td><%=image_tag("logo3.jpeg") %></td>
+        <% end %>
+      <td class="retiree_experience round"><%= retiree.first_name %> <%= retiree.last_name %></td>
+      <td class="retiree_experience round"><%= retiree.years_worked %> years at <%= retiree.plant %></td>
+      <td class="retiree_petstory round"><%= retiree.pet_story %></td>
+      <td class="retiree_status round"><%= retiree.what_are_you_doing %></td>
+      <td class="retiree_ceomsg round"><%= retiree.message_to_ceo %></td>
+
+     
+        
+        <td><%= link_to 'Edit', edit_retiree_path(retiree) if current_user == retiree.user %></td>
+         <% if false %>
+        <td><%= link_to 'Show', retiree %></td>
+        <td><%= link_to 'Destroy', retiree, :confirm => 'Are you sure?', :method => :delete %></td>
+      <% end %>
+    </tr>
+  <% end %>
+  <%= will_paginate @retirees %>
+</table>
+
+
+
+

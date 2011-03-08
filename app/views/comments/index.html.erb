@@ -1,0 +1,14 @@
+<table>
+  <tr>
+  <table class="micropost" summary="comments listing">
+    <% @comments.each do |comment| %>
+      <tr>
+        <td class="main"> <%=comment.comment_text%></td>
+        <td><%=comment.created_at%></td>
+        <td>
+          <%= link_to "Approve", approve_comment_path(comment) %>&nbsp;|&nbsp;
+          <%= link_to "Reject", reject_comment_path(comment) %>
+        </td>
+      </tr>
+    <% end %>
+  </table>

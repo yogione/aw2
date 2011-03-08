@@ -1,0 +1,28 @@
+  <table class="pretty-table" summary="comments listing">
+    <tr><td colspan="4"><a class="" href="<%=@story.url%>"><%=@story.title%></a>&nbsp&nbsp | <%=@story.votes%> votes
+  <br/><%=@story.teaser%></td></tr>
+    <% @comments = Comment.moderated(@story.id) %>
+    <% for comment in   @comments%>
+      <tr>
+        <td id="vote_<%=comment.id%>" class="votes_box round">
+        <%= render :partial => 'comments/votes', :locals => {:story => comment.story, :comment => comment} %>
+      </td>
+         <td class="">  <%=comment.comment_text%>
+          <br> <font size="1">  Posted <%= time_ago_in_words(comment.created_at) %> ago
+            by <%=comment.user.name%></font></td>
+          </tr>
+    <% end %>
+  </table>
+  <table>
+    <%= form_for ([@story, @story.comments.build]) do |f|  %>
+    <%= render 'shared/error_messages', :object => f.object %>
+    <div class="field">
+      <%= f.label :comment %><br />
+      <%#= f.tinymce :comment_text %>
+      <%= f.text_area :comment_text,  :rows => 4 %>
+    </div>
+    <div class="actions">
+     <%= f.submit "Submit - I am using this form" %>
+    </div>
+  <% end %>
+</table>

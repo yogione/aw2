@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @retiree.user_id %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @retiree.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @retiree.last_name %>
+</p>
+
+<p>
+  <b>Years worked:</b>
+  <%= @retiree.years_worked %>
+</p>
+
+<p>
+  <b>Plant:</b>
+  <%= @retiree.plant %>
+</p>
+
+<p>
+  <b>Pet story:</b>
+  <%= @retiree.pet_story %>
+</p>
+
+<p>
+  <b>What are you doing:</b>
+  <%= @retiree.what_are_you_doing %>
+</p>
+
+<p>
+  <b>Photo path1:</b>
+  <%= @retiree.photo_path1 %>
+</p>
+
+<p>
+  <b>Video path1:</b>
+  <%= @retiree.video_path1 %>
+</p>
+
+<p>
+  <b>Message to ceo:</b>
+  <%= @retiree.message_to_ceo %>
+</p>
+
+
+<%= link_to 'Edit', edit_retiree_path(@retiree) %> |
+<%= link_to 'Back', retirees_path %>

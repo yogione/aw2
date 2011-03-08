@@ -1,0 +1,13 @@
+<table>  
+  <tr>
+  <table class="micropost" summary="comments listing">
+    <% @current_comments.each do |comment| %>
+      <tr>
+        <td class="main"> <%=comment.comment_text%>
+          <br> <font size="1">  Posted <%= time_ago_in_words(comment.created_at) %> ago.</font>
+          <br>
+
+      </tr>
+    <% end %>
+  </table>
+  <%= render 'shared/comment_form' %>
