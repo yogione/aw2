@@ -12,13 +12,17 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
+    <%= link_to image_tag("awlogo52.gif"), root_path %>
     <div class="container">
       <%= render 'layouts/header' %>
       <section class="round">
-        <nav class="round" style="font-color:solid white;font-size:12px;font-weight:bold;">
+      <!--  <nav class="round" style="font-color:solid white;font-size:12px;font-weight:bold;"> -->
+      <nav id="nav">
           <ul>
-            <li><%= link_to "Top Stories", root_path %></li>
-            <li><%= link_to "Retirees", retiree_path %></li>
+            <li><%= link_to "Top Stories      ", root_path %></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><%= link_to "Retirees     ", retiree_path %></li>
+             <li>&nbsp;&nbsp;</li>
             <% if signed_in? %>
               <% if false%>
                 <li> <%= link_to "Profile", current_user %> </li>
@@ -26,6 +30,7 @@
                 <li><%=link_to "Moderate Comments", comments_path  if current_user.admin? %></li>
               <% end %>
               <li><%= link_to "Post Story", poststory_path %></li>
+               <li>&nbsp;</li>
               <li><%= link_to "Settings", edit_user_path(current_user) %></li>
             <% end %>
           </ul>

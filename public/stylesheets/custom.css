@@ -1,13 +1,53 @@
 .container {
-  width: 75%;
+  width: 80%;
+}
+/* Header-nav */
+#nav {
+  margin: 14px 0 0 0;
+  width: 100%;
+  float: right;
+  background: #009908 url(/images/aten_header-grad.jpg) bottom repeat-x;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+#nav li {
+  background: none;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0;
+  text-align: center;
+  width: 70px;
+}
+#nav li a {
+  color: #fff;
+  display: block;
+  height: 36px;
+  font-size: 12px;
+}
+#nav li a:hover {
+  background: url(/images/aten_header-grad-inv.jpg) top repeat-x;
 }
 
+#nav li.active a, #nav li.active a:hover {
+  background: #fff;
+  color: #009908;
+}
+
+.logo_class {
+    background-color:white;
+/* background-image: url(logo.jpg); */
+background-repeat: repeat-x;
+background-position: top center;
+width: 100%;
+max-width: auto;
+
+}
 /*override Blueprint css table settings  */
 table {margin-bottom:0;}
 th, td, caption {padding:0px 0px 0px 0px;}
-
-
-
 
       .pretty-table
       {
@@ -53,8 +93,6 @@ th, td, caption {padding:0px 0px 0px 0px;}
     border-right: 1px solid #ffdec9; font-size:0.9em
       }
 
-
-
       .pretty-table th[scope=row]
       {
         background: url("/images/fade-orange.jpg") repeat-y right;
@@ -62,7 +100,6 @@ th, td, caption {padding:0px 0px 0px 0px;}
     padding: 15px;
     vertical-align: top;width: 12%;
       }
-
 
       .pretty-table tr:hover td, .pretty-table th[scope=row]:hover
       {
@@ -74,7 +111,7 @@ th, td, caption {padding:0px 0px 0px 0px;}
 
 .pretty-table td a:link {
 background: url("/images/arrow.png") no-repeat scroll 92px center transparent;
-    border: 1px solid #FFDEC9;
+    border: 0px solid #FFDEC9;
     color: #FFBB8E;
     font-weight: bold;
     padding: 2px 15px 2px 5px;
@@ -88,7 +125,7 @@ body {
 }
 
 header {
-  padding-top: 40px;
+  padding-top: 0px;
 }
 
 header img {
