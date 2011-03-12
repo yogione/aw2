@@ -26,9 +26,12 @@ SampleApp::Application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :domain               => 'www.autoworkers.com',
-    :user_name            => 'raghubetter@gmail.com', #add your gmail account email
-    :password             => '', # add your gmail password
+    :user_name            => 'coder.ruby@gmail.com', #add your gmail account email
+    :password             => 'yahoomail', # add your gmail password
     :authentication       => 'plain',
     :enable_starttls_auto => true  }
 
 end
+
+
+

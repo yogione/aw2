@@ -1,23 +1,23 @@
 class CommentsController < ApplicationController
   before_filter :authenticate
-  before_filter :find_comment, :only => [:approve,:reject,:upvote, :downvote,]
+  before_filter :find_comment, :only => [:upvote, :downvote,]
 
   def index
     #@comments = Comment.find(:all, :conditions => {:moderated => 0})
     @comments = Comment.find(:all)
   end
 
-  def approve
-    @comment.approved
-    flash[:success] = "comment Moderated Approved!"
-    redirect_to comments_path
-  end
-
-  def reject
-    @comment.rejected
-    flash[:success] = "comment Moderated Rejected"
-    redirect_to comments_path
-  end
+#  def approve
+#    @comment.approved
+#    flash[:success] = "comment Moderated Approved!"
+#    redirect_to comments_path
+#  end
+#
+#  def reject
+#    @comment.rejected
+#    flash[:success] = "comment Moderated Rejected"
+#    redirect_to comments_path
+#  end
   
   def new
     @comment = Comment.new

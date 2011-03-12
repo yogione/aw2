@@ -7,7 +7,7 @@ class StoriesController < ApplicationController
     @story  = current_user.stories.build(params[:story])
     if @story.save
       flash[:success] = "Story created!"
-      redirect_to story_comments_url(@story)
+      redirect_to root_path and return
     else
       render 'shared/_story_form'
     end

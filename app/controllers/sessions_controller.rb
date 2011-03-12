@@ -38,10 +38,14 @@ class SessionsController < ApplicationController
   end
 
   def new_password
-    @user = User.find(params[:user_id])  if params[:user_id]
+    p '&&&&&&&&&&&&&&&&&&&&&&&&&&&&'
+    p params
+    p @user = User.find(params[:user_id])  if params[:user_id]
   end
 
   def update_reset_password
+    p '***********************'
+    p params[:key]
     token = Token.find_by_token(params[:key])  if params[:key]
     if token
       flash[:notice] = "Please reset your password"
