@@ -6,6 +6,7 @@ gem 'will_paginate', '3.0.pre2'
 gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
 gem 'jquery-rails', '>=0.2.6'
 gem 'mysql2'
+gem "paperclip", "~> 2.3"
 
 group :development do
   gem 'rspec-rails', '2.1.0'
