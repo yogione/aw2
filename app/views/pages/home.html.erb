@@ -10,7 +10,7 @@
     <tr class="story_tr round"><td><%if story.photo.exists? then %>
           <%=image_tag story.photo.url(:thumb), :size => "80x80" %></td>
       <% else %>
-          <%=image_tag("logo6.jpeg",  :size => "80x80") %></td>
+          <%=image_tag("defaultcar.jpg",  :size => "80x80") %></td>
         <% end %>
       <td id="vote_<%=story.id%>" class="votes_box round">
         <%= render :partial => 'pages/votes', :locals => {:story => story} %>
