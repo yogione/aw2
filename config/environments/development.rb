@@ -31,6 +31,11 @@ SampleApp::Application.configure do
     :authentication       => 'plain',
     :enable_starttls_auto => true  }
 
+  config.after_initialize do
+  require 'paperclip'
+  Paperclip.options[:command_path] = '/usr/local/bin'
+end
+
 end
 
 

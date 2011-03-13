@@ -4,7 +4,7 @@ class Story < ActiveRecord::Base
   has_many :comments
   has_attached_file :photo,
     :styles =>{
-            :thumb=>"100x100#",
+            :thumb=>"100x100",
             :small=>"400x400"}
 
   validates :title, :presence => true, :length => { :maximum => 140 }

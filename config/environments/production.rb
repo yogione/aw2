@@ -4,7 +4,7 @@ SampleApp::Application.configure do
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
   config.cache_classes = true
-  Paperclip.options[:command_path] = "/usr/local/bin"
+  #Paperclip.options[:command_path] = "/usr/local/bin"
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
@@ -54,10 +54,15 @@ config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-  :domain               => 'www.autoworkers.com',
-  :user_name            => 'raghubetter@gmail.com',
-  :password             => 'simple_84&',
+  :domain               => 'www.autoworker.com',
+  :user_name            => 'autoworker1@gmail.com',
+  :password             => 'galemichess',
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
+
+  config.after_initialize do
+  require 'paperclip'
+  Paperclip.options[:command_path] = '/usr/local/bin'
+end
 
 end

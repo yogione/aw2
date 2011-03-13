@@ -1,3 +1,13 @@
+1. paperclip bug
+2. forums
+3. blog
+4. editable retiree page
+5. post few stories once in a while
+6. start promoting, talking to users.
+
+
+
+
 home page (top stories)
 =========================
 1. view top stories w/o signin - only signin to comment
