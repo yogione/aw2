@@ -32,7 +32,7 @@ class StoriesController < ApplicationController
         end
       }
     end
-    flash[:notice] = "Upvoted successfully"
+    # flash[:notice] = "Upvoted successfully"
    end
 
   def downvote

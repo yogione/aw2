@@ -55,33 +55,31 @@ th, td, caption {padding:0px 0px 0px 0px;}
         margin: 0;
         border-collapse: collapse;
         font-size: 0.9em;
-
       }
 
-
-.pretty-table th {border-bottom: 3px solid #ffdec9;
+.pretty-table th {border-bottom: 3px solid #DCE3EB;
     padding: 15px;
     text-align: left; text-shadow: 1px 1px 1px #8E8E8E;}
 
      .pretty-table td
       {
-        border-bottom: 1px solid #ffdec9;
+        border-bottom: 1px solid #DCE3EB;
         padding: 12px;
         text-align: left;
         color: #7B7B79;
 		vertical-align: top;
-		border-left: 1px solid #ffdec9;
-    border-right: 1px solid #ffdec9;
+		border-left: 1px dotted #DCE3EB;
+    border-right: 1px dotted #DCE3EB;
       }
 
       .pretty-table th[scope=col]
       {
         color: #000;
-        background: url("/images/fade-orange.jpg") repeat-y right;
+        background: url("../images/fade.jpg") repeat-y right;
         text-transform: uppercase;
         font-size: 1.5em;
 
-		border-bottom: 3px solid #ffdec9;
+		border-bottom: 3px solid #DCE3EB;
     padding: 15px;
       }
 
@@ -89,30 +87,33 @@ th, td, caption {padding:0px 0px 0px 0px;}
       {
         color: #4F4F4F;
         background: #fff;
-        border-left: 1px solid #ffdec9;
-    border-right: 1px solid #ffdec9; font-size:0.9em
+        border-left: 1px solid #DCE3EB;
+    border-right: 1px solid #DCE3EB; font-size:0.9em
       }
+
+
 
       .pretty-table th[scope=row]
       {
-        background: url("/images/fade-orange.jpg") repeat-y right;
-        border-bottom: 1px solid #ffdec9;
+        background: url("../images/fade.jpg") repeat-y right;
+        border-bottom: 1px solid #DCE3EB;
     padding: 15px;
     vertical-align: top;width: 12%;
       }
 
+
       .pretty-table tr:hover td, .pretty-table th[scope=row]:hover
       {
-        background: #FFFAF7;
+        background: #F7FCFF;
 
       }
 
  .pretty-table td + td + td + td,  .pretty-table th[scope=col] + th[scope=col] + th[scope=col] + th[scope=col] + th[scope=col] {border-right:0}
 
 .pretty-table td a:link {
-background: url("/images/arrow.png") no-repeat scroll 92px center transparent;
-    border: 0px solid #FFDEC9;
-    color: #FFBB8E;
+background: url("../images/arrow.png") no-repeat scroll 92px center transparent;
+  /*  border: 1px solid #E3DCDC; */
+    color: #9CB8C5;
     font-weight: bold;
     padding: 2px 15px 2px 5px;
     text-decoration: none;
@@ -143,7 +144,7 @@ td.votes_box {
   width: 8%;
   height: 5px;
   padding: 5px;
-  vertical-align: middle;
+  vertical-align: text-top;
  /* background: #ffc; */
   border: 1px solid white;
 }
