@@ -4,6 +4,7 @@
 <%#= init_tinymce_hammer_if_required %>
 <%#= tinyMCE.init({:force_p_newlines =>"true"})   %>
     <title><%= title %></title>
+    <meta name="description" content="<%= meta_description %>" />
     <%= csrf_meta_tag %>
     <%= render 'layouts/stylesheets' %>
 <%#= javascript_include_tag :defaults, 'jquery-ui-1.8.10.custom.min.js','jrails.js','jquery.min.js','tiny_mce/tiny_mce.js' %>
@@ -12,7 +13,7 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
-    <%= link_to image_tag("awlogo52.gif",:style =>"width:100%;"), root_path %>
+    <%= link_to image_tag("awlogo52.gif",:style =>"width:100%;", :alt =>"autoworker"), root_path %>
     <div class="container">
       <%= render 'layouts/header' %>
       <section class="round">
