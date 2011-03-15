@@ -51,7 +51,7 @@ class CommentsController < ApplicationController
 
   def upvote
     @comment.upvote
-   p @comment.votes
+ #  p @comment.votes
      respond_to do |format|
       format.html {redirect_to story_path(@comment.story)}
       format.js{

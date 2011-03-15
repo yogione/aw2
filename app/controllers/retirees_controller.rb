@@ -57,8 +57,6 @@ class RetireesController < ApplicationController
   # POST /retirees
   # POST /retirees.xml
   def create
-    p params
-
     @retiree = Retiree.new(params[:retiree])
     @retiree.user_id = current_user.id
     respond_to do |format|
