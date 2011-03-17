@@ -64,7 +64,7 @@ th, td, caption {padding:0px 0px 0px 0px;}
      .pretty-table td
       {
         border-bottom: 1px solid #DCE3EB;
-        padding: 12px;
+        padding: 6px;
         text-align: left;
         color: #7B7B79;
 		vertical-align: top;
@@ -111,7 +111,7 @@ th, td, caption {padding:0px 0px 0px 0px;}
  .pretty-table td + td + td + td,  .pretty-table th[scope=col] + th[scope=col] + th[scope=col] + th[scope=col] + th[scope=col] {border-right:0}
 
 .pretty-table td a:link {
-background: url("../images/arrow.png") no-repeat scroll 92px center transparent;
+/*background: url("../images/arrow.png") no-repeat scroll 92px center transparent; */
   /*  border: 1px solid #E3DCDC; */
     color: #9CB8C5;
     font-weight: bold;

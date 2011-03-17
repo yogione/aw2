@@ -1,5 +1,5 @@
   <table class="pretty-table" summary="comments listing">
-    <tr><td colspan="4"><a class="" href="<%=@story.url%>"><%=@story.title%></a>&nbsp&nbsp | <%=@story.votes%> votes
+    <tr><td colspan="4"><a class="" href="<%=@story.url%>"><%=@story.title%></a>&nbsp;&nbsp; | &nbsp;&nbsp;<%=@story.votes%> votes
   <br/><%=@story.teaser%></td></tr>
     <% @comments = Comment.moderated(@story.id) %>
     <% for comment in   @comments%>

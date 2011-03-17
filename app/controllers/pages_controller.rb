@@ -6,6 +6,7 @@ class PagesController < ApplicationController
      # @micropost = Micropost.new
       @story = Story.new
       @count1 = 1
+     # @stories = Story.find(:all, :include => :comments, :order => 'created_at DESC')
       @stories = Story.find(:all, :include => :comments, :order => 'created_at DESC')
       # @stories = Story.paginate(:page => params[:page])
       if signed_in?
