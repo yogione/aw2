@@ -1,5 +1,5 @@
 <%# if signed_in? %>
-<table class="pretty-table" summary="stories listing">
+<table class="pretty-table-new" summary="stories listing">
   <% if not signed_in? %>
     <tr><td colspan="4"> <%= link_to "Sign in", signin_path, :class => "signin_button2 round" %>  | <%= link_to "Sign up now!", signup_path, :class => "signup_button2 round" %>
       </td></tr>

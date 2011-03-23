@@ -119,6 +119,82 @@ th, td, caption {padding:0px 0px 0px 0px;}
     text-decoration: none;
     vertical-align: middle;  }
 
+
+
+   .pretty-table-new
+      {
+        padding: 0;
+        margin: 0;
+        border-collapse: collapse;
+        font-size: 0.9em;
+      }
+
+.pretty-table-new th {border-bottom: 3px solid #DCE3EB;
+    padding: 15px;
+    text-align: left; text-shadow: 1px 1px 1px #8E8E8E;}
+
+     .pretty-table-new td
+      {
+        border-bottom: 1px solid #DCE3EB;
+        padding: 6px;
+        text-align: left;
+        color: #7B7B79;
+		vertical-align: top;
+		border-left: 1px dotted #DCE3EB;
+    border-right: 1px dotted #DCE3EB;
+      }
+
+      .pretty-table-new th[scope=col]
+      {
+        color: #000;
+        background: url("../images/fade.jpg") repeat-y right;
+        text-transform: uppercase;
+        font-size: 1.5em;
+
+		border-bottom: 3px solid #DCE3EB;
+    padding: 15px;
+      }
+
+      .pretty-table-new th+th[scope=col]
+      {
+        color: #4F4F4F;
+        background: #fff;
+        border-left: 1px solid #DCE3EB;
+    border-right: 1px solid #DCE3EB; font-size:0.9em
+      }
+
+
+
+      .pretty-table-new th[scope=row]
+      {
+        background: url("../images/fade.jpg") repeat-y right;
+        border-bottom: 1px solid #DCE3EB;
+    padding: 15px;
+    vertical-align: top;width: 12%;
+      }
+
+
+      .pretty-table-new tr:hover td, .pretty-table th[scope=row]:hover
+      {
+        background: #F7FCFF;
+
+      }
+
+ .pretty-table-new td + td + td + td,  .pretty-table th[scope=col] + th[scope=col] + th[scope=col] + th[scope=col] + th[scope=col] {border-right:0}
+
+.pretty-table-new td a:link {
+/*background: url("../images/arrow.png") no-repeat scroll 92px center transparent; */
+  /*  border: 1px solid #E3DCDC; */
+  /*  color: #3059AC; */
+    color: #2200C1;
+    font-weight: bold;
+    padding: 2px 15px 2px 5px;
+    text-decoration: none;
+    vertical-align: middle;  }
+
+
+
+
 body {
   #background: #94bbff;
    background: url(http://eeleillib.com/images/mainBg.png) #ebebeb 0px 0px repeat-x;
