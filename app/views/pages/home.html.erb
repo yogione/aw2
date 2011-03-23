@@ -15,7 +15,7 @@
       <td id="vote_<%=story.id%>" class="votes_box round">
         <%= render :partial => 'pages/votes', :locals => {:story => story} %>
       </td>
-      <td><a href="<%= story.url %> " class="story_url"><%= story.title %></a>
+      <td><a href="<%= story.url %>" class="story_url"><%= story.title %></a>
         <br/><%= story.teaser %>
         <br/> <font size="1">  Posted by <%= story.user.name %>&nbsp;<%= time_ago_in_words(story.created_at) %> ago.</font>
         <br/> <%=Comment.moderated(story.id).count %>

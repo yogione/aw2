@@ -274,6 +274,8 @@ a.story_url {
 
     font-weight: bold;
     font-size: 130%;
+    color:  #003399;
+
 
 }
 tr.story_tr {
@@ -329,11 +331,11 @@ table.profile {
 }
 
 td.main {
-<<<<<<< HEAD:public/stylesheets/custom.css
+
   width: 100%;
-=======
-  width: 60%;
->>>>>>> raghu/master:public/stylesheets/custom.css
+
+
+
   padding: 1em;
 }
 
