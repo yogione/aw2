@@ -4,8 +4,8 @@
     <tr><td colspan="4"> <%= link_to "Sign in", signin_path, :class => "signin_button2 round" %>  | <%= link_to "Sign up now!", signup_path, :class => "signup_button2 round" %>
       </td></tr>
   <%end%>
-  <tr><td class="civil_note" colspan=5>
-      suggestion: quickly scan the main story and keep the discussion here - add quality comments </td></tr>
+  <tr><td background-color=#FFFF00; colspan=5;>
+    suggestion: quickly scan the main story and keep the discussion here - add quality comments</td></tr>
   <% @stories.each do |story|  %>
     <tr class="story_tr round"><td><%if story.photo.exists? then %>
           <%=image_tag story.photo.url(:thumb), :size => "80x80" %></td>
