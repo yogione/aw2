@@ -1,6 +1,13 @@
-1. paperclip bug
-2. forums
-3. blog
+pagination to top stories page
+back ground yellow to suggestion: on top stories page
+leader board of top contributors
+SEO
+another menu item - useful links
+
+
+
+
+
 4. editable retiree page
 5. post few stories once in a while
 6. start promoting, talking to users.
@@ -18,6 +25,9 @@ home page (top stories)
    and rest of the comments
 
 5. is there a forum software / plugin for retirees tab
+1. paperclip bug
+2. forums
+3. blog
 
 
 
